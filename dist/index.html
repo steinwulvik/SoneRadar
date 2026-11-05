@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#123c35">
+  <title>SoneRadar · Live områdeoversikt</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="#"><i class="brandPulse"></i><span class="brandSone">Sone</span><span class="brandRadar">Radar</span></a>
+    <span class="sourceTop">Kilder: MET, NVE, Politiloggen, OSIRIS</span>
+  </header>
+  <main>
+    <aside>
+      <div class="eyebrow">DINE STEDER</div>
+      <h1>Nær det som<br>betyr noe.</h1>
+      <p class="muted">Reelle hendelser og farevarsler fra offentlige datakilder.</p>
+      <div id="zones"></div>
+      <button id="add" class="outline">＋ Legg til sted</button>
+    </aside>
+    <section class="workspace">
+      <div id="status" class="visuallyHidden" role="status" aria-live="polite"></div>
+      <div id="filters"></div>
+      <div class="mapFrame">
+        <div id="map"></div>
+        <div class="mapLegend" aria-label="Kartforklaring"><span><i class="legendRadius"></i>Soneradius</span><span><i class="legendLive"></i>Sted</span></div>
+      </div>
+      <div class="listHead"><h3 id="monthHeading">Registrerte hendelser innenfor sonen i denne måneden <span id="count"></span></h3><span id="refreshStatus"></span></div>
+      <div id="events"></div>
+    </section>
+  </main>
+  <dialog id="dialog"><div id="dialogBody"></div></dialog>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
