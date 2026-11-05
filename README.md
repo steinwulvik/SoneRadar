@@ -29,7 +29,7 @@ Testmeldinger og hendelsesvarsler deler rullerende timegrenser. Standardverdiene
 
 ## Render
 
-Ved utrulling fra undermappen `SoneRadar` brukes `npm start` som startkommando. Sett `HOST=0.0.0.0` i Render, og legg SMTP-verdiene inn som hemmelige miljøvariabler der. Ikke last opp den lokale `.env`-filen.
+Ved utrulling fra repoets rot brukes `npm start` som startkommando. Sett `HOST=0.0.0.0` i Render, og legg SMTP-verdiene inn som hemmelige miljøvariabler der. Ikke last opp den lokale `.env`-filen.
 
 ## Personvern
 
