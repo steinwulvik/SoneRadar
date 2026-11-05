@@ -1,0 +1,8 @@
+{
+  "name": "soneradar-live",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": { "start": "node server.cjs", "test": "node check.cjs && node verify.cjs && node notification-check.cjs && node cache-check.cjs && node mail-rate-check.cjs" },
+  "engines": { "node": ">=22" }
+}
+
